@@ -1,0 +1,59 @@
+ip 
+
+	
+--------------------------------------------------------------------------------
+nmap report 
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    2 ftp      ftp          4096 Nov 28  2022 mail_backup
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.10.14.109
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 48:ad:d5:b8:3a:9f:bc:be:f7:e8:20:1e:f6:bf:de:ae (RSA)
+|   256 b7:89:6c:0b:20:ed:49:b2:c1:86:7c:29:92:74:1c:1f (ECDSA)
+|_  256 18:cd:9d:08:a6:21:a8:b8:b6:f7:9f:8d:40:51:54:fb (ED25519)
+
+-------------------------------------------------------
+
+recommended usernames:
+
+optimus@funnel.htb
+albert@funnel.htb
+andreas@funnel.htb
+christine@funnel.htb 
+maria@funnel.htb
+
+deafult pass:
+	funnel123#!#
+	
+	
+	-=-----------------
+	
+i found that christine is the one who isn't changed his password so i will connect with ssh protocol with him.
+
+ ------------------------------------------
+ 
+ State   Recv-Q  Send-Q   Local Address:Port    Peer Address:Port Process 
+LISTEN  0       4096     127.0.0.53%lo:53           0.0.0.0:*            
+LISTEN  0       128            0.0.0.0:22           0.0.0.0:*            
+LISTEN  0       4096         127.0.0.1:5432         0.0.0.0:*            
+LISTEN  0       4096         127.0.0.1:45283        0.0.0.0:*            
+LISTEN  0       32                   *:21                 *:*            
+LISTEN  0       128               [::]:22              [::]:*  
+
+
+
